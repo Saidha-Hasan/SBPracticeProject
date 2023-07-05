@@ -12,5 +12,6 @@ import com.app.entity.Employee;
 public interface IEmployeeRepository extends JpaRepository<Employee, Long>{
 	
 	List<Employee> findByEmpName(String empName);
+	List<Employee> findByEmpSal(Double empSal);
 		
 }
